@@ -2,7 +2,7 @@ const express = require('express')
 
 const router = express.Router()
 
-const cartLogic = require('../logic/cart.logic')
+const cartLogic = require('../logic/cart/cart.logic')
 
 router.post('/', cartLogic.addCart)
 router.delete('/:id', cartLogic.deleteCartById)
