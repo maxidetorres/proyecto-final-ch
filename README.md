@@ -2,8 +2,18 @@
 
 ### `npm run start`
 
-Ejecuta la api en modo desarrollador
+Ejecuta la api en modo desarrollador y consulta datos de MEMORIA
 Abrir [http://localhost:8080](http://localhost:8080)
+
+
+### `npm run start:mongodb`
+
+Ejecuta la api en modo desarrollador y consulta datos de la base de datos MONGODB
+
+
+### `npm run start:firebase`
+
+Ejecuta la api en modo desarrollador y consulta datos de la base de datos FIREBASE
 
 # Endpoints Productos
 

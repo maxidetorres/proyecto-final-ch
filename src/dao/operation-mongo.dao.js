@@ -10,10 +10,7 @@ exports.getAll = async (model) => {
 }
 exports.save = async (model, object) => {
   try {
-    console.log('COLLECTION', model)
-    console.log("producto", object)
     const objectCollection = new model(object)
-    console.log('OBJECT COLLECTION 0',objectCollection)
    return await objectCollection.save()
   }catch(er){
     console.log(er)

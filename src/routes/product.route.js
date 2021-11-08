@@ -7,7 +7,6 @@ const productFirebaseLogic = require('../logic/product/product-firebase.logic') 
 
 const productLogic = require('../logic/product/index')
 
-console.log(productLogic)
 /* router.get('/', productLogic.getAllProducts) */
 /* router.get('/', productMongoLogic.getAllProducts) */
 router.get('/', productLogic.getAllProducts)
