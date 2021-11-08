@@ -1,6 +1,6 @@
 
 #Exclude firebase.json
-.ch-nodejs-firebase-adminsdk-1z3r4-9798a24cb9.json
+/ch-nodejs-firebase-adminsdk-1z3r4-9798a24cb9.json
 
 # Logs
 logs
