@@ -8,6 +8,7 @@ const ProductSchema = new Schema({
   codigo: { type: String },
   stock: { type: Number, required: true},
   urlFoto: { type: String },
+  cantidad: {type: Number}
 
 })
 
