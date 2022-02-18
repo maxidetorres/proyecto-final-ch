@@ -6,15 +6,15 @@ let cartLogic
 console.log(process.env.DB_OPTION)
 switch (process.env.DB_OPTION) {
   case 'firebase':
-    console.log("firebase")
+    console.log('firebase')
     cartLogic = cartFirebaseLogic
     break
   case 'mongodb':
-    console.log("mongodb")
+    console.log('mongodb')
     cartLogic = cartMongoLogic
     break
   default:
-    console.log("memoria")
+    console.log('memoria')
     cartLogic = cartMem
     break
 }

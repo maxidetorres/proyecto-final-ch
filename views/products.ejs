@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./layout/main'); %>
+</head>
+<header>
+    <%- include('./layout/header'); %>
+</header>
+<body>
+  <div class="card-body">
+    <div class="row">
+      <% products.forEach((product)=>{ %>
+        <div class="col-lg-3" style="text-align:center">
+            <div class="">
+              <img class="w-100"src="<%=product.urlFoto%>" alt="">
+            </div>
+            <div class="">
+              <h5 class="card-title"><%=product.nombre%></h5>
+              <p class="card-text"><%=product.descripcion%></p>
+            </div>
+      
+          <h4>$<%=product.precio%></h4>
+          <button class="btn btn-info" type="submit">Comprar</button>
+          </form>
+        </div>
+      <%})%>
+    </div>
+  </div>
+
+
+</body>

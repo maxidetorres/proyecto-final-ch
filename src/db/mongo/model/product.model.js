@@ -6,9 +6,10 @@ const ProductSchema = new Schema({
   timestamp: { type: Date, default: Date.now() },
   descripcion: { type: String, required: true },
   codigo: { type: String },
-  stock: { type: Number, required: true},
+  precio: { type: Number },
+  stock: { type: Number, required: true },
   urlFoto: { type: String },
-  cantidad: {type: Number}
+  cantidad: { type: Number }
 
 })
 

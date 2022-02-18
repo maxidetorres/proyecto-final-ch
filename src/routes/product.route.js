@@ -15,7 +15,7 @@ router.get('/:id', productLogic.getProductById)
 /* router.get('/:id', productLogic.getProductById) */
 /* router.post('/', isAdmin , productLogic.addProduct) */
 /* router.post('/', isAdmin , productMongoLogic.saveProduct) */
-router.post('/', isAdmin , productLogic.saveProduct)
+router.post('/', isAdmin, productLogic.saveProduct)
 /* router.put('/:id', isAdmin, productLogic.updateProductById) */
 router.put('/:id', isAdmin, productLogic.updateProductById)
 /* router.put('/:id', isAdmin, productMongoLogic.updateProductById) */

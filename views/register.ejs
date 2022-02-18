@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./layout/main'); %>
+</head>
+<div class="px-4 py-5 my-5 text-center">
+<div class="container ">
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-body">
+              <form enctype="multipart/form-data" method="post" action="/api/user/register" name="profileImage">
+                    <div class="form-group">
+                        <h2>Crear nueva cuenta</h2>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="firsName">Nombre</label>
+                        <input id="firsName" name="firsName" type="text" maxlength="50" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lastName">Apellido</label>
+                        <input name="lastName" id="lastName" type="text" maxlength="50" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="address">Dirección</label>
+                        <input name="address" id="address" type="text" maxlength="50" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="age">Edad</label>
+                        <input name="age" id="age" type="number" maxlength="3" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="phone">Telefono</label>
+                        <input name="phone" id="phone" type="text" maxlength="50" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="email">Email</label>
+                        <input name="email" id="email" type="email" maxlength="50" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="password">Constraseña</label>
+                        <input id="password" type="password" name="password" maxlength="25" class="form-control" length="40">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="signupPasswordagain">Repetir contraseña</label>
+                        <input id="signupPasswordagain" type="password" maxlength="25" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="profileImage" class="form-label">Adjunte foto de perfil</label>
+                        <input type="file" class="form-control form-control-sm" id="profileImage" name="profileImage">
+                      </div>
+                    <div class="form-group">
+                        <button id="signupSubmit" type="submit" class="btn btn-info btn-block">Crear cuenta</button>
+                    </div>
+                    <hr>
+                    <p></p>¿Ya tenes cuenta? <a href="/login">Iniciar sesión</a></p>
+                </form>
+                <form enctype="multipart/form-data" method="post" action="/api/user/register" name="profileImage">
+                    <label>Your email address:</label>
+                    <input type="email" autocomplete="on" autofocus name="userid" placeholder="email" required size="32" maxlength="64" /><br />
+                    <label>Custom file label:</label>
+                    <input type="text" name="filelabel" size="12" maxlength="32" /><br />
+                    <label>File to stash:</label>
+                    <input type="file" name="profileImage" required />
+                    <input type="submit" value="Stash the file!" />
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<style>
+    form { margin: 0px 10px; }
+
+h2 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.container { max-width: 360px; }
+
+.divider {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.divider hr {
+  margin: 7px 0px;
+  width: 35%;
+}
+
+.left { float: left; }
+
+.right { float: right; }
+
+</style>

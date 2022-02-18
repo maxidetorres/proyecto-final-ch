@@ -6,15 +6,15 @@ let productLogic
 console.log(process.env.DB_OPTION)
 switch (process.env.DB_OPTION) {
   case 'firebase':
-    console.log("firebase")
+    console.log('firebase')
     productLogic = productFirebaseLogic
     break
   case 'mongodb':
-    console.log("mongodb")
+    console.log('mongodb')
     productLogic = productMongoLogic
     break
   default:
-    console.log("memoria")
+    console.log('memoria')
     productLogic = productMem
     console.log(productLogic)
     break

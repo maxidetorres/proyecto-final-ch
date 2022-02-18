@@ -7,5 +7,20 @@
     "username": "root",
     "password": "root",
     "cluster": "cluster0.4pg5u"
+  },
+  "jwt": {
+    "secret": "clave-secreta"
+  },
+  "ethereal":{
+    "user": "estefania.homenick86@ethereal.email",
+    "password": "kjpUScyaCssz2TZhh8"
+  },
+  "twilio":{
+    "account_sid": "AC34d9601cbba9cf5062a4f8a46da3a6d6",
+    "token": "fb3d3b4be648fe78c8ffd562c1681d00",
+    "phone": "+19205202875"
+  },
+  "cluster":{
+    "isActive":false
   }
 }

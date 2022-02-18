@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./layout/main'); %>
+</head>
+<header>
+    <%- include('./layout/header'); %>
+</header>
+<div class="px-4 py-5 my-5 text-center">
+    <div class="container ">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <form action="/api/user/login" method="POST">
+                        <div class="form-group">
+                            <h2>Inicio de sesión</h2>
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="unmail@unmail.com" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="password" class="form-label">Constraseña</label>
+                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <button id="signupSubmit" type="submit" class="btn btn-info btn-block">Iniciar sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    form { margin: 0px 10px; }
+
+h2 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.container { max-width: 360px; }
+
+.divider {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.divider hr {
+  margin: 7px 0px;
+  width: 35%;
+}
+
+.left { float: left; }
+
+.right { float: right; }
+
+</style>
