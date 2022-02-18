@@ -30,3 +30,7 @@ DELETE [http://localhost:8080/api/carrito/:id](http://localhost:8080/api/carrito
 GET [http://localhost:8080/api/carrito/:id/productos](http://localhost:8080/api/carrito/:id/productos) Se obtienen los productos del carrito según ID .\
 POST [http://localhost:8080/api/carrito/:id/productos](http://localhost:8080/api/carrito/:id/productos) Se agrega un nuevo producto al carrito .\
 DELETE [http://localhost:8080/api/carrito/:id/productos/:idProd](http://localhost:8080/api/carrito/:id/productos/:idProd) Se elimina un producto del carrito
+
+# Se agrearon vista de login y register
+[http://localhost:8080/register](http://localhost:8080/register)
+[http://localhost:8080/login](http://localhost:8080/login)
