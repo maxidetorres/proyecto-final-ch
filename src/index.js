@@ -20,7 +20,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.use(session({
-  secret: 'shhhhhhhhhhhhhhhhhhhhh',
+  secret: 'estodeberiairenunasecret',
   resave: false,
   saveUninitialized: false,
   cookie: {

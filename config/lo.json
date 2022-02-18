@@ -9,7 +9,7 @@
     "cluster": "cluster0.4pg5u"
   },
   "jwt": {
-    "secret": "clave-secreta"
+    "secret": "clave-secreta-que-no-es-secreta"
   },
   "ethereal":{
     "user": "estefania.homenick86@ethereal.email",
